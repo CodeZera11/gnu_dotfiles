@@ -126,6 +126,7 @@ alt-m = 'workspace M' # for Macbook
 alt-n = 'workspace N' # for Linear Notes
 alt-t = 'workspace T' # for Terminal
 alt-v = 'workspace V' # for Video Editing
+alt-d = 'workspace D' # for Discord
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 # alt-shift-1 = 'workspace 1'
@@ -223,3 +224,7 @@ run = "move-node-to-workspace V"
 [[on-window-detected]]
 if.app-id = 'com.jetbrains.intellij'
 run = "move-node-to-workspace V"
+
+[[on-window-detected]]
+if.app-id = 'com.hnc.Discord'
+run = "move-node-to-workspace D"
