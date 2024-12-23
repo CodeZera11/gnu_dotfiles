@@ -80,6 +80,7 @@ alias gs='git status'
 alias ga='git add'
 alias gc='git commit'
 alias gp='git push'
+alias vault='dotenv-vault'
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
