@@ -80,6 +80,7 @@ alias gs='git status'
 alias ga='git add'
 alias gc='git commit'
 alias gp='git push'
+alias gl='git log'
 alias vault='dotenv-vault'
 
 # Which plugins would you like to load?
