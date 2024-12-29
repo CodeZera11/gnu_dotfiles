@@ -125,7 +125,7 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+source $HOME/.nvm/nvm.sh
 
 export PATH=$PATH:/opt/homebrew/bin
 
