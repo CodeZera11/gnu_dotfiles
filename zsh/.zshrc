@@ -10,6 +10,7 @@ fi
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+export COREPACK_ENABLE_AUTO_PIN=0
 
 # Brew path
 export PATH=$PATH:/opt/homebrew/bin
@@ -141,3 +142,15 @@ function y() {
 	fi
 	rm -f -- "$tmp"
 }
+
+function mkfile() { 
+    mkdir -p  "$1" && touch  "$1"/"$2" 
+}
+
+# pnpm
+export PNPM_HOME="/Users/codezera/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
