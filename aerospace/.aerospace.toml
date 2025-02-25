@@ -130,43 +130,29 @@ alt-d = 'workspace D' # for Discord
 alt-y = 'workspace Y' # for youtube
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
-# alt-shift-1 = 'workspace 1'
-# alt-shift-2 = 'workspace 2'
-# alt-shift-3 = 'workspace 3'
-# alt-shift-4 = 'workspace 4'
-# alt-shift-5 = 'workspace 5'
-# alt-shift-6 = 'workspace 6'
-# alt-shift-7 = 'workspace 7'
-# alt-shift-8 = 'workspace 8'
-# alt-shift-9 = 'workspace 9'
-# alt-shift-b = 'workspace B' # for Browser
-# alt-shift-e = 'workspace E' # for File Explorer (Finder)
-# # alt-shift-m = 'workspace M' # for Music
-# alt-shift-n = 'workspace N' # for Notes
-# # alt-shift-p = 'workspace P'
-# alt-shift-t = 'workspace T' # for Terminal
-# alt-shift-v = 'workspace V' # for VS Code
-cmd-ctrl-1 = 'move-node-to-workspace 1'
-cmd-ctrl-2 = 'move-node-to-workspace 2' # for macbook
-cmd-ctrl-3 = 'move-node-to-workspace 3'
-cmd-ctrl-4 = 'move-node-to-workspace 4'
-cmd-ctrl-5 = 'move-node-to-workspace 5'
-cmd-ctrl-6 = 'move-node-to-workspace 6'
-cmd-ctrl-7 = 'move-node-to-workspace 7'
-cmd-ctrl-8 = 'move-node-to-workspace 8'
-cmd-ctrl-9 = 'move-node-to-workspace 9'
-cmd-ctrl-b = 'move-node-to-workspace B' # for Browser
-cmd-ctrl-e = 'move-node-to-workspace E' # for File Explorer (Finder)
-cmd-ctrl-n = 'move-node-to-workspace N' # for Notes
-cmd-ctrl-t = 'move-node-to-workspace T' # for Terminal
-cmd-ctrl-v = 'move-node-to-workspace V' # for VS Code
-cmd-ctrl-m = 'move-node-to-workspace M' # for macbook
-cmd-ctrl-y = 'move-node-to-workspace Y' # for youtube
+alt-shift-1 = 'move-node-to-workspace 1'
+alt-shift-2 = 'move-node-to-workspace 2' # for macbook
+alt-shift-3 = 'move-node-to-workspace 3'
+alt-shift-4 = 'move-node-to-workspace 4'
+alt-shift-5 = 'move-node-to-workspace 5'
+alt-shift-6 = 'move-node-to-workspace 6'
+alt-shift-7 = 'move-node-to-workspace 7'
+alt-shift-8 = 'move-node-to-workspace 8'
+alt-shift-9 = 'move-node-to-workspace 9'
+alt-shift-b = 'move-node-to-workspace B' # for Browser
+alt-shift-e = 'move-node-to-workspace E' # for File Explorer (Finder)
+alt-shift-n = 'move-node-to-workspace N' # for Notes
+alt-shift-t = 'move-node-to-workspace T' # for Terminal
+alt-shift-v = 'move-node-to-workspace V' # for VS Code
+alt-shift-m = 'move-node-to-workspace M' # for macbook
+alt-shift-d = 'move-node-to-workspace D' # for Discord
+alt-shift-y = 'move-node-to-workspace Y' # for youtube
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 alt-tab = 'workspace-back-and-forth'
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-workspace-to-monitor
 alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
+
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
 alt-shift-semicolon = 'mode service'
@@ -186,10 +172,16 @@ alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
 
 
-# macbook specific workspaces
+# secondary monitor specific workspaces
 [workspace-to-monitor-force-assignment]
-M = '^built-in retina display$'
-2 = '^built-in retina display$'
+2 = '^G24F 2$'
+5 = '^G24F 2$'
+6 = '^G24F 2$'
+7 = '^G24F 2$'
+8 = '^G24F 2$'
+D = '^G24F 2$'
+N = '^G24F 2$'
+E = '^G24F 2$'
 
 [[on-window-detected]]
 if.app-id = 'com.googlecode.iterm2'
@@ -238,3 +230,11 @@ run = "move-node-to-workspace T"
 [[on-window-detected]]
 if.app-id = 'com.mitchellh.ghostty'
 run = "move-node-to-workspace T"
+
+[[on-window-detected]]
+if.app-id = 'org.localsend.localsendApp'
+run = "move-node-to-workspace N"
+
+[[on-window-detected]]
+if.app-id = 'com.electron.dockerdesktop'
+run = "move-node-to-workspace D"
