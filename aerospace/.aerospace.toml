@@ -233,8 +233,13 @@ run = "move-node-to-workspace T"
 
 [[on-window-detected]]
 if.app-id = 'org.localsend.localsendApp'
-run = "move-node-to-workspace N"
+run = "move-node-to-workspace E"
 
 [[on-window-detected]]
 if.app-id = 'com.electron.dockerdesktop'
 run = "move-node-to-workspace D"
+
+# for ignoring tiling 
+[[on-window-detected]]
+if.app-id = 'com.apple.Music'
+run = "layout floating"
