@@ -1,0 +1,18 @@
+[
+  {
+    "context": "TabSwitcher",
+    "use_key_equivalents": true,
+    "bindings": {
+      "cmd-h": "menu::SelectPrev",
+      "cmd-l": "menu::SelectNext"
+    }
+  },
+  {
+    "context": "Editor",
+    "use_key_equivalents": true,
+    "bindings": {
+      "cmd-h": "menu::SelectPrev",
+      "cmd-l": "menu::SelectNext"
+    }
+  }
+]

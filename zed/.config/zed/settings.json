@@ -7,11 +7,38 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "assistant": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "o3-mini"
+    },
+    "version": "2"
+  },
   "ui_font_size": 18,
   "buffer_font_size": 18,
+  "ui_font_family": "Dank Mono",
   "theme": {
     "mode": "system",
     "light": "One Light",
     "dark": "Ayu Dark"
+  },
+  "toolbar": {
+    "breadcrumbs": true
+  },
+  "languages": {
+    "TypeScript": {
+      "language_servers": ["typescript-language-server", "!vtsls", "..."]
+    },
+    "TSX": {
+      "language_servers": ["typescript-language-server", "!vtsls", "..."]
+    },
+    "JavaScript": {
+      "language_servers": ["typescript-language-server", "!vtsls", "..."]
+    }
+  },
+  "context": "Editor",
+  "bindings": {
+    "cmd-shift-h": "pane::ActivatePrevItem",
+    "cmd-shift-l": "pane::ActivateNextItem"
   }
 }
