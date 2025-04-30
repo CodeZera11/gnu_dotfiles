@@ -179,6 +179,7 @@ alt-shift-l = ['join-with right', 'mode main']
 6 = '^G24F 2$'
 7 = '^G24F 2$'
 8 = '^G24F 2$'
+T = '^G24F 2$'
 D = '^G24F 2$'
 N = '^G24F 2$'
 E = '^G24F 2$'
@@ -247,3 +248,7 @@ run = "move-node-to-workspace D"
 [[on-window-detected]]
 if.app-id = 'com.apple.Music'
 run = "layout floating"
+
+[[on-window-detected]]
+if.app-id = 'com.exafunction.windsurf'
+run = "move-node-to-workspace V"
